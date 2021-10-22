@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,15 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <!--Min Resume and nav-->
         <section>
             <div class="circle"></div>
             <header>
                 <a href="Index.html"><img src="img/AP.png" alt="" class="logo"></a>
                 <div class="toggle" onclick="togglemenu();"></div>
                 <ul class="navigation">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Nuestro Team</a></li>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="pages/team.html">Nuestro Team</a></li>
                     <li><a href="">Proyectos</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
@@ -22,39 +23,53 @@
             <div class="content">
                 <div class="textbox">
                     <h2>Nosotros Somos <br> <span>Ap Digital Works</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, at vel quos accusantium numquam voluptatem <br> dolor nisi enim, reiciendis commodi, officiis dicta! Amet suscipit minima tempore autem beatae doloremque ipsam!</p>
-                    <a href="">Learn More</a>
+                    <p class="firstp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, at vel quos accusantium numquam voluptatem <br> dolor nisi enim, reiciendis commodi, officiis dicta! Amet suscipit minima tempore autem beatae doloremque ipsam!</p>
+                    <a href="pages/team.html">Conocenos</a>
                 </div>
                 <div class="imgbox">
                     <img src="img/AP.png" alt="" class="APDW">
                 </div>
             </div>
-            <ul class="thumb">
-                <li><img src="img/apdw.png" onclick="imgslider('img/AP.png'), changecirclecolor('#ffc000')"  alt=""></li>
-                <li><img src="img/CM..png" onclick="imgslider('img/CM1.png'), changecirclecolor('#7030a0')"  alt=""></li>
-                <li><img src="img/WEB.png" onclick="imgslider('img/WEB1.png'), changecirclecolor('#ffc000')" alt="" ></li>
-                <li><img src="img/DISEÑO.png" onclick="imgslider('img/DES1.png'), changecirclecolor('#7030a0')" alt=""></li>
-            </ul>
             <ul class="sci">
                 <li><a href=""><img src="img/facebook.png" alt=""></a></li>
                 <li><a href=""><img src="img/twitter.png" alt=""></a></li>
                 <li><a href="https://www.instagram.com/apdigitalworks/"><img src="img/instagram.png" alt=""></a></li>
             </ul>
         </section>
-        <script type="text/javascript">
-        function imgslider(anything){
-            document.querySelector('.APDW').src = anything;
-        }
-        function changecirclecolor(color){
-            const circle = document.querySelector('.circle');
-            circle.style.background = color;
-        }
-        function togglemenu(){
-            var menutoggle = document.querySelector('.toggle');
-            var navigation = document.querySelector('.navigation')
-            menutoggle.classList.toggle('active')
-            navigation.classList.toggle('active')
-        }
-        </script>
+        <!--Servicios-->
+        <section id="servicios">
+        <div class="container">
+            <h2 class="section-heading" data-outline="Nuestros servicios">Nuestros servicios</h2>
+            <div class="all-items">
+                <div class="items">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                    </div>
+                    <h3 class="item-heading">Web Design</h3>
+                    <p class="item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime laborum vero itaque reiciendis dicta ex, cumque quis doloribus veritatis quasi assumenda iste asperiores fugit quidem vitae quos animi veniam sed.</p>
+                </div>
+                <div class="items">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg>
+                    </div>
+                    <h3 class="item-heading">Comunnity Manager</h3>
+                    <p class="item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime laborum vero itaque reiciendis dicta ex, cumque quis doloribus veritatis quasi assumenda iste asperiores fugit quidem vitae quos animi veniam sed.</p>
+                </div>
+                <div class="items">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                          </svg>
+                    </div>
+                    <h3 class="item-heading">Graphic Design</h3>
+                    <p class="item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime laborum vero itaque reiciendis dicta ex, cumque quis doloribus veritatis quasi assumenda iste asperiores fugit quidem vitae quos animi veniam sed.</p>
+                </div>
+            </div>
+        </div>
+        </section>
     </body>
 </html>
