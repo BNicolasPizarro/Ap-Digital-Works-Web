@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AP Digital Works</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="Index.html"><img src="img/AP.png" alt="" class="logo"></a>
+                <div class="toggle" onclick="togglemenu();"></div>
+                <ul class="navigation">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Nuestro Team</a></li>
+                    <li><a href="">Proyectos</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>Nosotros Somos <br> <span>Ap Digital Works</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, at vel quos accusantium numquam voluptatem <br> dolor nisi enim, reiciendis commodi, officiis dicta! Amet suscipit minima tempore autem beatae doloremque ipsam!</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="imgbox">
+                    <img src="img/AP.png" alt="" class="APDW">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="img/apdw.png" onclick="imgslider('img/AP.png'), changecirclecolor('#ffc000')"  alt=""></li>
+                <li><img src="img/CM..png" onclick="imgslider('img/CM1.png'), changecirclecolor('#7030a0')"  alt=""></li>
+                <li><img src="img/WEB.png" onclick="imgslider('img/WEB1.png'), changecirclecolor('#ffc000')" alt="" ></li>
+                <li><img src="img/DISEÑO.png" onclick="imgslider('img/DES1.png'), changecirclecolor('#7030a0')" alt=""></li>
+            </ul>
+            <ul class="sci">
+                <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/apdigitalworks/"><img src="img/instagram.png" alt=""></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+        function imgslider(anything){
+            document.querySelector('.APDW').src = anything;
+        }
+        function changecirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function togglemenu(){
+            var menutoggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menutoggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+        </script>
+    </body>
+</html>
